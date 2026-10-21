@@ -23,7 +23,7 @@ void menu(){
         return;
     }
     printf("name");
-    scanf("%s",newNode -> name);
+    scanf("%29s",newNode -> name);
     printf("age");
     scanf("%d",&newNode -> age);
     printf("phone number");
@@ -140,7 +140,7 @@ void menu(){
     }
 
     Contact* current = head;
-    int count;
+    int count = 0;
     while(current != NULL){
         fwrite(current,sizeof(Contact),1,fp);
         current = current -> next;
